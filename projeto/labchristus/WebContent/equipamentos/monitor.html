@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>LABCHRISTUS - Cadastro de Monitor</title>
+</head>
+<body>
+	<h1>Cadastro de Monitor</h1>
+
+	<form action="selecionaLotacao.html">
+
+		<label for="serieId">Número de Série</label> 
+		<input type="text" name="numeroSerie" id="serieId" required="required"><br /> 
+		<label for="marcaId">Marca</label> 
+		<input type="text" name="marca" id="marcaId" required="required"><br /> 
+		<label for="modeloId">Modelo</label>
+		<input type="text" name="modelo" id="modeloId" required="required"><br />
+		<label for="tipoId">Tipo</label> 
+		<select id="tipoId">
+			<option value="crt">CRT</option>
+			<option value="lcd">LCD</option>
+		</select><br /> 
+		<label for="tamanhoTelaId">Tamanho da Tela</label>
+		<input type="number" name="tamanhoTela" id="tamanhoTelaId" required="required"><br />
+		<input type="submit" value="Cadastrar">
+
+	</form>
+</body>
+</html>

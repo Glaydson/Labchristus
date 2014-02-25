@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Labchristus - Cadastrar Equipamento</title>
+</head>
+<script type="text/javascript">
+	function exibirElemento() {
+		var tipo = document.getElementById("tipo").value;
+		if (tipo == "Estabilizador") {
+			document.formAction.action="estabilizador.html";
+		} else if (tipo == "Impressora") {
+			document.formAction.action="impressora.html";
+		} else if (tipo == "Micro") {
+			document.formAction.action="micro.html";
+		} else if (tipo == "Monitor de Vídeo") {
+			document.formAction.action="monitor.html";
+		} else if (tipo == "Pen Drive") {
+			document.formAction.action="pendrive.html";
+		} else if (tipo == "Projetor Multimídia") {
+			document.formAction.action="projetor.html";
+		}
+		return true;
+	}
+</script>
+<body>
+	<h1>Selecione o tipo de equipamento desejado para continuar</h1>
+	<form id="formAction" name="formAction" onsubmit="return exibirElemento();">
+		<select id="tipo">
+			<option value="Estabilizador">Estabilizador</option>
+			<option value="Impressora">Impressora</option>
+			<option value="Micro">Micro</option>
+			<option value="Monitor de Vídeo">Monitor de Vídeo</option>
+			<option value="Pen Drive">Pen Drive</option>
+			<option value="Projetor Multimídia">Projetor Multimídia</option>
+		</select> 
+		<input type="submit" value="Continuar">
+	</form>
+</body>
+</html>

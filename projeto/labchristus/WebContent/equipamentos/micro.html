@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>LABCHRISTUS - Cadastro de Micro</title>
+</head>
+<body>
+<h1>Cadastro de Micro</h1>
+	<form action="selecionaLotacao.html">
+
+		<label for="tombamentoId">Tombamento</label> 
+		<input type="text" name="tombamento" id="tombamentoId" required="required"><br /> 
+		<fieldset>
+			<legend>Processador</legend>
+			<label for="fabricanteProcId">Fabricante</label> 
+			<input type="text" name="fabricanteProc" id="fabricanteProcId" required="required"><br />
+			<label for="modeloProcId">Modelo</label>
+			<input type="text" name="modeloProc" id="modeloProcId" required="required"><br />
+			<label for="clockProcId">Clock</label> 
+			<input type="number" name="clockProc" id="clockProcId" required="required"><br /> 
+		</fieldset>
+		<fieldset>
+			<legend>Disco rígido</legend>
+			<label for="marcaHdId">Marca</label> 
+			<input type="text" name="marcaHd" id="MarcaHdId" required="required"><br />
+			<label for="tamanhoHdId">Tamanho em GB</label>
+			<input type="number" name="tamanhoHd" id="tamanhoHdId" required="required"><br />
+		</fieldset>
+		<fieldset>
+			<legend>Memória RAM</legend>
+			<label for="marcaRamId">Marca</label> 
+			<input type="text" name="marcaRam" id="MarcaRamId" required="required"><br />
+			<label for="tamanhoRamId">Tamanho</label>
+			<input type="number" name="tamanhoRam" id="tamanhoRamId" required="required"><br />
+			<label for="frequenciaRamId">Frequência</label>
+			<input type="number" name="frequenciaRam" id="frequenciaRamId" required="required"><br />
+		</fieldset>
+		<fieldset>
+			<legend>Outras Informações</legend>
+			<label for="qtdeUsbId">Quantidade de Portas USB</label> 
+			<input type="number" name="qtdeUsb" id="qtdeUsbId" required="required"><br />
+			<label for="leitorDiscoId">Existe Leitora/Gravadora de CD/DVD?</label>
+			<input type="checkbox" name="leitorDisco" id="leitorDiscoId" required="required"><br />
+		</fieldset>
+		
+		<input type="submit" value="Cadastrar">
+
+	</form>
+</body>
+</html>
