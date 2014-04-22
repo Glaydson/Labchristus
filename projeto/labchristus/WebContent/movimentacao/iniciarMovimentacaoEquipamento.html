@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Labchristus - Registro de Movimentação de Equipamento</title>
+</head>
+<body style="font-family: Verdana">
+	<h2>Preencha pelo menos um dos campos e clique em Pesquisar:</h2>
+	<form action="listarEquipamentos.html">
+		<label>Código do Equipamento:</label>
+		<input type="text" name="codigo">
+		<br><br>
+		<label>Tipo do Equipamento:</label>
+		<select id="tipo">
+			<option value="" >Selecione</option>
+			<option value="Estabilizador">Estabilizador</option>
+			<option value="Impressora">Impressora</option>
+			<option value="Micro">Micro</option>
+			<option value="Monitor de Vídeo">Monitor de Vídeo</option>
+			<option value="Pen Drive">Pen Drive</option>
+			<option value="Projetor Multimídia">Projetor Multimídia</option>
+		</select>
+		<br><br>
+		<label>Sede:</label>
+		<select id="tipo">
+			<option value="" >Selecione</option>
+			<option value="benfica">Benfica</option>
+			<option value="domluis">Dom Luís</option>
+			<option value="parque">Parque Ecológico</option>
+		</select> 
+		<br><br>
+		<input type="submit" value="Pesquisar">
+	</form>
+</body>
+</html>

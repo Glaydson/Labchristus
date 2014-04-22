@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Labchristus - Registro de Movimentação de Equipamento</title>
+</head>
+<body style="font-family: Verdana">
+	<h2>Foram localizados os seguintes equipamentos:</h2>
+	<h3>Assinale um dos equipamentos e escolha o tipo de movimentação desejado:</h3>
+	<form action="enviomanutencao.html">
+		<table border="1">
+			<tr align="center" style="font-variant: bold;">
+				<td></td>
+				<td>Código</td>
+				<td>Tipo do Equipamento</td>
+				<td>Sede</td>
+				<td>Lotação</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="equip" value="1"></td>
+				<td>1</td>
+				<td>Microcomputador</td>
+				<td>Dom Luís</td>
+				<td>Sala dos Professores</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="equip" value="2"></td>
+				<td>2</td>
+				<td>Impressora</td>
+				<td>Dom Luís</td>
+				<td>Coordenação do Direito</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="equip" value="3"></td>
+				<td>3</td>
+				<td>Projetor Multimídia</td>
+				<td>Dom Luís</td>
+				<td>Laboratório 705</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="equip" value="4"></td>
+				<td>4</td>
+				<td>Pen Drive</td>
+				<td>Dom Luís</td>
+				<td>Coordenação de Sistemas de Informação</td>
+			</tr>
+		</table>
+		<br>
+		<label>Tipo de Movimentação:</label>
+		 <select id="tipoMov">
+			<option value="">Selecione</option>
+			<option value="manutencao">Envio para Manutenção</option>
+			<option value="transferencia">Transferência de Lotação</option>
+			<option value="upgrade">Upgrade</option>
+			<option value="substituicao">Substituição</option>
+		</select> 
+		<br><br>
+		<input type="submit" value="Movimentar">
+	</form>
+</body>
+</html>
