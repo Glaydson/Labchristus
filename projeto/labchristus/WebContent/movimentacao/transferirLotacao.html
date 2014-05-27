@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Labchristus - Registro de Movimentação de Equipamento</title>
+</head>
+<body style="font-family: Verdana">
+	<h2>Transferência de Lotação</h2>
+	<h3>Preencha os campos indicados para confirmar a transferência do equipamento:</h3>
+	<form action="TransferirLotacao">
+		<label>Código do Equipamento:</label>
+		<label>B1400602</label>
+		<br>
+		<label>Tipo do Equipamento:</label>
+		<label>Microcomputador</label>
+		<br>
+		<label>Localização Atual:</label>
+		<label>Unichristus - Sede Dom Luís - Biblioteca</label>
+		<br>
+		<label>Localização de Destino:</label>
+		 <select id="localiz" name="novaLocalizacao">
+			<option value="">Selecione</option>
+			<option value="001">Sede Dom Luís - Laboratório de Informática 705</option>
+			<option value="002">Sede Dom Luís - Laboratório de Informática 1105</option>
+			<option value="003">Sede Dom Luís - Oficina</option>
+			<option value="004">Sede Dom Luís - Coordenação Sistemas de Informação</option>
+		</select> 
+		<br>
+		<label>Observações:</label>
+		<textarea name="observacoes" cols="30" rows="4"></textarea>
+		<br><br>
+		<input type="submit" value="Transferir para Nova Lotação">
+	</form>
+</body>
+</html>
