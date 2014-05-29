@@ -1,6 +1,7 @@
 package unichristus.labchristus.dominio.movimentacoes;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import unichristus.labchristus.dominio.equipamentos.ControleEquipamentos;
@@ -8,7 +9,9 @@ import unichristus.labchristus.dominio.equipamentos.Equipamento;
 import unichristus.labchristus.dominio.equipamentos.EquipamentoDTO;
 import unichristus.labchristus.dominio.sedes.ControleSedes;
 import unichristus.labchristus.dominio.sedes.Sede;
+import unichristus.labchristus.persistencia.MovimentacaoDAO;
 import unichristus.labchristus.persistencia.TipoEquipamento;
+import unichristus.labchristus.persistencia.TipoMovimentacao;
 
 public class ControleMovimentacoes {
 
@@ -57,6 +60,17 @@ public class ControleMovimentacoes {
 			}
 		}
 		return equipamentos;
+	}
+
+	public static Movimentacao registrarEntrada(Equipamento e) {
+		Movimentacao mov = new Movimentacao();
+		mov.setData(new Date());
+		mov.setEquipamento(e);
+		mov.setLotacaoDestino(e.getLotacao());
+		mov.setNumero(1);
+		mov.setTipo(TipoMovimentacao.ENTRADA);
+		MovimentacaoDAO.inserir(mov);
+		return mov;
 	}
 
 }

@@ -130,5 +130,9 @@ public class EquipamentoDAO {
 		}
 		return equipamentosTipo;
 	}
+	
+	public static void inserir(Equipamento e) {
+		equipamentos.add(e);
+	}
 
 }
